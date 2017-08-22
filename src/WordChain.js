@@ -1,3 +1,5 @@
+module.exports = class WordChain {
+};
 var fs = require('fs');
 
 var words = fs.readFileSync("words")
@@ -33,4 +35,4 @@ var search = function(start, end, predecessors) {
         var x = search(wordlist[i], end, predecessors);
         if (x) return x;
     }
-}
+ }
